@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Welcome to noobsoft!</title>
+
+		<meta http-equiv="Set-Cookie" content="secrets=shh">
+	</head>
+
+	<body>
+		<h1><marquee>Hey there! Welcome to my web site!</marquee></h1>
+
+		Here's a page by my friend Joe.  Thanks for the link, Joe!
+		<a href="xss.html?xss=<script>alert('cookie: ' + document.cookie)</script>">Joe's super cool link!</a><p>
+
+		Here's a page some guy named Zero Cool sent me.
+		I'm not sure if I trust him, though... 
+		<a href="xss.html?xss=<script>alert('cookie: ' + document.cookie)</script>" x-no-hax="1">click this link!</a>
+	</body>
+</html>

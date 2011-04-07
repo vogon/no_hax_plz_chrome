@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>XSSable page</title>
+
+		<script>
+			function xss()
+			{
+				/* make this page preternaturally prone to cross-site
+				   scripting. */
+				document.write("here's where you are!" + 
+							       unescape(document.location));
+			}
+		</script>
+	</head>
+
+	<body>
+		Noobsoft is a purveyor of world-class software, much like the software running this page. <p/>
+
+		<script>
+			xss();
+		</script>
+	</body>
+</html>

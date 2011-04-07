@@ -1,0 +1,16 @@
+{
+  "name": "(x-)no-hax plz.",
+  "version": "1.0",
+  "description": "A mildly silly improvement for online safety.",
+
+  "permissions": ["tabs"],
+
+  "content_scripts": [
+  	{
+  	  "matches": ["<all_urls>"],
+  	  "js": ["no_hax_dispatch.js"]
+  	}
+  ],
+
+  "background_page": "no_hax.html"
+}

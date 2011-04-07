@@ -1,0 +1,19 @@
+<html>
+	<script>
+		chrome.extension.onRequest.addListener(
+			function(req, sender, sendResponse)
+			{
+				chrome.windows.create(
+					{
+						"url": req,
+						"incognito": true
+					}
+				);
+
+				console.log("dispatched no-hax load to " + req);
+			}
+		);
+
+		console.log("should have an on-request listener now...");
+	</script>
+</html>
